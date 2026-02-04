@@ -1,0 +1,76 @@
+Alex Sharma
+Business Analyst
+Bengaluru, India
+Professional Summary
+
+Detail-oriented Business Analyst with 3+ years of experience translating business requirements into data-driven solutions. Skilled in stakeholder communication, process improvement, and reporting. Strong analytical mindset with hands-on experience in SQL, Excel, and BI tools.
+
+Core Skills
+
+Business Requirements Gathering (BRD, FRD)
+
+Stakeholder Management
+
+Data Analysis & Reporting
+
+SQL, MS Excel (VLOOKUP, Pivot Tables)
+
+Power BI / Tableau
+
+Process Mapping (As-Is / To-Be)
+
+Agile & Waterfall Methodologies
+
+JIRA, Confluence
+
+Work Experience
+
+Business Analyst
+ABC Solutions Pvt. Ltd. | Jan 2023 – Present
+
+Worked with business stakeholders to gather and document requirements
+
+Created functional requirement documents and user stories
+
+Analyzed datasets using SQL and Excel to identify trends and insights
+
+Supported UAT activities and coordinated issue resolution
+
+Improved reporting efficiency by 20% through dashboard automation
+
+Junior Business Analyst
+XYZ Technologies | Jul 2021 – Dec 2022
+
+Assisted senior analysts in requirement analysis and documentation
+
+Prepared weekly and monthly performance reports
+
+Conducted gap analysis and process improvement studies
+
+Supported Agile ceremonies including sprint planning and reviews
+
+Education
+
+Bachelor of Business Administration (BBA)
+University of Delhi | 2017 – 2020
+
+Certifications
+
+Certified Business Analysis Professional (CBAP) – Mock / Sample
+
+Agile Fundamentals Certification – Mock / Sample
+Projects
+
+Sales Performance Dashboard
+
+Designed Power BI dashboards for regional sales analysis
+
+Reduced manual reporting effort by 30%
+
+Additional Information
+
+Strong communication and presentation skills
+
+Comfortable working with cross-functional teams
+
+Willing to relocate
