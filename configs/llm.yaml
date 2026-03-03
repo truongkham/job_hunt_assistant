@@ -1,0 +1,12 @@
+default:
+  provider: openai_compatible
+  model: llama-3.1-8b-instant
+  temperature: 0.2
+
+providers:
+  openai_compatible:
+    api_key_env: OPENAI_API_KEY
+    base_url_env: OPENAI_BASE_URL
+
+  openai:
+    api_key_env: OPENAI_API_KEY

@@ -1,15 +1,10 @@
-from crewai import Agent, Task, LLM
-from utils.config import OPENAI_API_KEY, OPENAI_BASE_URL
+from crewai import Agent, Task
+from utils.llm_factory import LLMConfig, get_llm
 
-# Use Groq via OpenAI-compatible endpoint (slightly higher temperature for creativity)
-llm = LLM(
-    model="llama-3.1-8b-instant",
-    api_key=OPENAI_API_KEY,
-    base_url=OPENAI_BASE_URL,
-    temperature=0.3,
-)
 
 def get_resume_cl_agent():
+    # Slightly higher temperature for creativity for this agent
+    llm = get_llm(LLMConfig(provider="openai_compatible", model="llama-3.1-8b-instant", temperature=0.3))
     return Agent(
         role="Resume & Cover Letter Writer",
         goal="Customize application materials to match job descriptions",
@@ -17,6 +12,7 @@ def get_resume_cl_agent():
         llm=llm,
         verbose=True,
     )
+
 
 def create_resume_cl_task(agent, job_summary, resume_text):
     return Task(

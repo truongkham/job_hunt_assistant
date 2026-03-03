@@ -20,3 +20,19 @@ data/resume_agent_output.txt
 data/outreach_message.txt
 data/cover_letters/
 data/applications_log.csv
+
+# Experiment outputs
+experiments/results/
+
+# Generated artifacts
+data/verification_report.md
+data/*.csv
+data/cover_letters/
+
+# Local datasets
+datasets/*.json
+
+# Python cache
+__pycache__/
+*.pyc
+

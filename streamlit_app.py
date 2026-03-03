@@ -1,6 +1,6 @@
 import streamlit as st
 
-from orchestrator import run_pipeline
+from orchestrator import run_pipeline, run_single_agent_pipeline
 from utils.usajobs_api import fetch_usajobs
 
 st.set_page_config(page_title="AI Job Hunt Assistant", layout="centered")
@@ -20,6 +20,12 @@ user_bio = st.text_area(
     "I'm a data professional passionate about public service.",
     height=100,
 )
+
+mode = st.radio(
+    "Select Architecture Mode:",
+    ["Multi-Agent (CrewAI)", "Single-Agent (Baseline)"]
+)
+
 
 st.markdown("---")
 
@@ -66,7 +72,11 @@ if "jobs" in st.session_state:
 
                 st.markdown(f"## Results for: {title} — {org}")
                 with st.spinner(f"Running agents for: {title}"):
-                    result = run_pipeline(job_data, resume_text, user_bio)
+                    if mode == "Single-Agent (Baseline)":
+                        result = run_single_agent_pipeline(job_data, resume_text, user_bio)
+                    else:
+                        result = run_pipeline(job_data, resume_text, user_bio)
+
 
                 st.markdown(result)
                 st.markdown("---")

@@ -1,15 +1,10 @@
-from crewai import Agent, Task, LLM
-from utils.config import OPENAI_API_KEY, OPENAI_BASE_URL
+from crewai import Agent, Task
+from utils.llm_factory import get_default_llm
 
-# Groq provides an OpenAI-compatible endpoint.
-llm = LLM(
-    model="llama-3.1-8b-instant",
-    api_key=OPENAI_API_KEY,
-    base_url=OPENAI_BASE_URL,
-    temperature=0.2,
-)
+
 
 def get_jd_analyst_agent():
+    llm = get_default_llm()
     return Agent(
         role="JD Analyst",
         goal="Understand and summarize government job postings",

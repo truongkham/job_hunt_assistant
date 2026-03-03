@@ -1,15 +1,10 @@
-from crewai import Agent, Task, LLM
-from utils.config import OPENAI_API_KEY, OPENAI_BASE_URL
+from crewai import Agent, Task
+from utils.llm_factory import LLMConfig, get_llm
 
-# Groq via OpenAI-compatible endpoint (a bit higher temperature for friendly tone)
-llm = LLM(
-    model="llama-3.1-8b-instant",
-    api_key=OPENAI_API_KEY,
-    base_url=OPENAI_BASE_URL,
-    temperature=0.5,
-)
+# A bit higher temperature for friendly tone
 
 def get_messaging_agent():
+    llm = get_llm(LLMConfig(provider="openai_compatible", model="llama-3.1-8b-instant", temperature=0.5))
     return Agent(
         role="Outreach Message Writer",
         goal="Draft personalized messages for job outreach",
