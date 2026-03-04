@@ -29,3 +29,9 @@ cd job_hunt_assistant
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
+
+## Architecture
+
+<p align="center">
+  <img src="assets/architecture_diagram.png" width="800"/>
+</p>
